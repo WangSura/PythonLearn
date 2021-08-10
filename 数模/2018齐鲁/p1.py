@@ -59,7 +59,7 @@ for i in I:
                     beta[i], j, show=False)[0][0][:-1]
                 path2 = graph[alpha[i]].shortest_paths(j, k, show=False)[0][0]
                 path2[0] = path2[0] + "(作业点)"
-                path2[-1] = path2[-1] + "(补水点)"
+                #path2[-1] = path2[-1] + "(补水点)"
                 points = path1 + path2
                 print(
                     f"编号：{alpha[i]}-{i}t用时：{round(t[i].x, 2)}ht路线：{' -> '.join(points)}")
